@@ -18,3 +18,42 @@ console.log(capitaliseKeys({ a: 1, b: 2, c: 3 })); //Expected: { A: 1, B: 2, C: 
 console.log(capitaliseKeys({ Hello: "hi" })); //Expected: { HELLO: 'hi' }
 
 console.log(capitaliseKeys({})); //Expected: {}
+
+//...............StringToObject..............//
+
+//Write a function stringToObject
+
+//stringToObject takes one parameter, a string. The string is made up of key-value pairs formatted as follows: “key1:value1,key2:value2,…”
+
+//stringToObject should return an object made up of the key-value pairs in the string. Assume all values are strings.
+
+//Examples:
+
+//write up function variable with name and param
+
+
+//map pick up the key and value
+
+const stringToObject = str => {
+  //console.log(str)
+  //assign an empty array
+  let newArr = [];
+
+//splitting into array
+  let splitting = str.split(",");
+  //console.log(splitting)
+
+  //iterating with for loop
+  for(let i = 0; i < splitting.length; i++){
+    let el = splitting[i].trim().split(":");
+    //push into empty array
+    newArr.push(el)
+  }
+  //console.log(newArr)
+  return newArr.reduce((acc, currentValue) => {
+      //console.log(acc[currentValue[0] = currentValue[1]]);
+      acc[currentValue[0]] = currentValue[1];
+  return acc;
+  //turn the array into an object
+  }, Object.fromEntries(newArr));
+}
