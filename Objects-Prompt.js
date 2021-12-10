@@ -31,9 +31,6 @@ console.log(capitaliseKeys({})); //Expected: {}
 
 //write up function variable with name and param
 
-
-//map pick up the key and value
-
 const stringToObject = str => {
   //console.log(str)
   //assign an empty array
