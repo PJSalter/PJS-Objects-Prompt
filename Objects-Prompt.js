@@ -61,6 +61,8 @@ console.log(stringToObject("a:1,b:2,c:3")); //Expected { a: "1", b: "2", c: "3" 
 
 console.log(stringToObject("one:-1,two:hi there,three:what's that?")); // Expected { one: "-1", two: "hi there", three: "what's that?" }
 
+//................................Map Object Solution...................................//
+
 //Write a function mapObject that takes two parameters: an object obj and a function fn.
 
 //mapObject should return a new object whose keys are the same as those of obj, and whose values are the result of calling fn with the values of obj.
