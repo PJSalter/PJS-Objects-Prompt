@@ -5,7 +5,7 @@
 
 function capitaliseKeys(obj) {
     var keys = Object.keys(obj)
-    console.log(keys);
+    //console.log(keys);
     return keys.reduce((acc, key) => {
       acc[key.toUpperCase()] = obj[key];
     return acc
