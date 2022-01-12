@@ -61,6 +61,28 @@ console.log(stringToObject("a:1,b:2,c:3")); //Expected { a: "1", b: "2", c: "3" 
 
 console.log(stringToObject("one:-1,two:hi there,three:what's that?")); // Expected { one: "-1", two: "hi there", three: "what's that?" }
 
+//.......................... Attempt Two of StringToObject.....................//
+
+const stringToObject = str => {
+  //console.log(str)
+  let newObj = {};
+  if(str) {
+    let splitStr = str.split(",");
+  //console.log(splitStr)
+  // input = array
+  // output = function - for Each
+  splitStr.forEach(el => {
+    let newlySplit = el.split(":")
+    //console.log(newlySplit)
+    //console.log(newlySplit[0])
+    newObj[newlySplit[0]] = newlySplit[1];
+})
+  }
+
+return newObj
+}
+
+
 //................................Map Object Solution...................................//
 
 //Write a function mapObject that takes two parameters: an object obj and a function fn.
