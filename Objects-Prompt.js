@@ -120,7 +120,6 @@ const shoppingList = str => {
     }
   })
   //console.log(result)
-  //console.log()
   return Object.fromEntries(result)
 }
 
