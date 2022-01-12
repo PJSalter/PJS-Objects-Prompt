@@ -82,6 +82,12 @@ const stringToObject = str => {
 return newObj
 }
 
+console.log(stringToObject("")); // Expected {}
+
+console.log(stringToObject("a:1,b:2,c:3")); //Expected { a: "1", b: "2", c: "3" }
+
+console.log(stringToObject("one:-1,two:hi there,three:what's that?")); // Expected { one: "-1", two: "hi there", three: "what's that?" }
+
 
 //................................Map Object Solution...................................//
 
