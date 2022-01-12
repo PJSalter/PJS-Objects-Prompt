@@ -90,7 +90,9 @@ console.log(stringToObject("one:-1,two:hi there,three:what's that?")); // Expect
 
 //...............................Going Shopping Object Solution.............................//
 
+//Write a function shoppingList that accepts a single parameter, a string. The string is a list of ingredients, separated by a comma, formatted as below:
 
+//“2 tomatoes, 1 egg, 3 pumpkins”
 
 
 //................................Map Object Solution...................................//
