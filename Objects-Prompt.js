@@ -1,4 +1,5 @@
-//Capitalise keys 
+//................................Capitalise keys..................................// 
+
 //Write a function capitaliseKeys, which takes an object as an argument, and returns a new object with the same key-value pairs except all the keys have been capitalised.
 
 //Attempt 1
@@ -132,8 +133,6 @@ console.log(shoppingList(""));
 console.log(shoppingList("2 tomatoes, 1 egg, 0 pumpkins"));
 // returns { tomatoes: 2, egg: 1 }
 
-
-
 //................................Map Object Solution...................................//
 
 //Write a function mapObject that takes two parameters: an object obj and a function fn.
@@ -146,7 +145,6 @@ const mapObject = (obj, fn) => {
     return result
   }, {})
 }
-
 
 console.log(mapObject({ a: 1, b: 2 }, (n) => n + 2));
 // returns { a: 3, b: 4 }
