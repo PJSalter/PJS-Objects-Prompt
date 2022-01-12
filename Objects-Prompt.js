@@ -123,6 +123,15 @@ const shoppingList = str => {
   return Object.fromEntries(result)
 }
 
+console.log(shoppingList("2 tomatoes, 1 egg, 3 pumpkins"));
+// returns { tomatoes: 2, egg: 1, pumpkins: 3 }
+
+console.log(shoppingList(""));
+// returns {}
+
+console.log(shoppingList("2 tomatoes, 1 egg, 0 pumpkins"));
+// returns { tomatoes: 2, egg: 1 }
+
 
 
 //................................Map Object Solution...................................//
