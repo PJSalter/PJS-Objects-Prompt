@@ -94,6 +94,10 @@ console.log(stringToObject("one:-1,two:hi there,three:what's that?")); // Expect
 
 //“2 tomatoes, 1 egg, 3 pumpkins”
 
+//The function shoppingList should return an object where the keys are the ingredient names, and the values are the number of the ingredients needed.
+
+
+
 
 //................................Map Object Solution...................................//
 
